@@ -1,0 +1,35 @@
+header.headerTitle {
+	text-align: center;
+}
+
+main.mainContentArea {
+	margin: auto;
+	align-content: center;
+	display: flex;
+	width: 70%;
+}
+
+aside.mainColumn {
+	padding: 2em;
+	margin: 2em;
+	border-style: dashed;
+	border-color: red;
+}
+#leftMain {
+	flex-basis: 33%;
+}
+#rightMain {
+	flex-basis: 67%;
+}
+
+#puppy {
+	float: right;
+}
+#ignorePuppy {
+	clear: both;
+}
+
+#fixedFooter {
+	position: fixed;
+	bottom: 5px;
+}

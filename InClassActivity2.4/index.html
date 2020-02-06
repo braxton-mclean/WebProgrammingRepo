@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> University of Georgia State Example on embedded style sheets</title>
+	<style>
+		body {
+			font-family : "times new roman";
+			margin-left : 20%;
+			margin-right: 20%;
+			text-align : justify;
+			background : ivory; color : darkred;
+		} p {
+			text-indent : 2cm;
+		} h1,h2,h3{ 
+			color:red ; margin-left:2cm
+		}
+	</style>
+</head> 
+
+<body>
+	Excersize 1 -> test text is dark red<br>
+	Excersize 2 -> The "style" tag was mispelled, the Times New Roman font-family descriptor was not properly closed with a quotation mark, h1,h2,h3 margin-left descriptor missingg a "-".<br>
+
+	Excersize 3 -> Original in-line<br>
+	<pre>
+&lt;h1 style="color:red;margin-left:2cm"&gt;h1 heading&lt;/h1&gt;
+&lt;h2 style="color:red;margin-left:4cm"&gt;h2 subheading&lt;/h2&gt;
+&lt;h2 style="color:red;margin-left:4cm"&gt;h2 subheading&lt;/h2&gt;
+&lt;p style="text-indent:2cm;color:darkred;margin-left:6cm"&gt;Paragraph 1&lt;/p&gt;
+&lt;p style="text-indent:2cm;color:darkred;margin-left:6cm"&gt;Paragraph 1&lt;/p&gt;
+&lt;p style="text-indent:2cm;color:darkred;margin-left:6cm"&gt;Paragraph 2&lt;/p&gt;
+	</pre>
+
+	Excersize 3 -> Embedded Style Sheet
+	<pre>
+&lt;style&gt;
+	h1 {
+		color: "red";
+		margin-left: 2cm;
+	} 
+	h2 {
+		color: "red";
+		margin-left: 4cm;
+	} 
+	p {
+		text-indent: 2cm;
+		color: "darkred";
+		margin-left: 6cm;
+	}
+&lt;/style&gt;
+	</pre>
+	<style>
+		h1 {
+			color: "red";
+			margin-left: 2cm;
+		} 
+		h2 {
+			color: "red";
+			margin-left: 4cm;
+		} 
+		p {
+			text-indent: 2cm;
+			color: "darkred";
+			margin-left: 6cm;
+		}
+	</style>
+
+	<h1>h1 heading</h1>
+	<h2>h2 subheading</h2>
+	<h2>h2 subheading</h2>
+	<p>Paragraph 1</p>
+	<p>Paragraph 1</p>
+	<p>Paragraph 2</p>
+
+	Excersize 3 -> <a href="externalStyleEx3.css">Extrenal Style Sheet</a><br>
+	Excersize 5 & 6 -> <a href="excersize5.html">Excersize 5 Page</a> & <a href="externalStyleEx6.css">Excersize 6 Style Sheet</a><br>
+	Excersize 7 -> <br>
+	2. Define a general yet consistent style at the university level which is accessible to all departments for further design. From there, departments can define their style needs in conjuction wtih the university level design, and styling and base functionality can be created, and from there professors of each department are provided their departments style guide, scripts, and stylesheets to use as a foundation to create what is necessary for them to share their information effectively. If Departments can identify patterns in the needs of their professors, they can extend their style guides, scripts, and stylesheets with baseline functionality, giving these features to all professors. This is important not only because its just generally useful but it spends less man-hours achieving the same desired result (or letting professors actually justify the inclusion of such a thing.)<br>
+	3.
+	<ol>
+		<li>body</li>
+		<li>h1</li>
+		<li>h2</li>
+		<li>h3</li>
+		<li>p</li>
+		<li>button</li>
+		<li>details</li>
+		<li>footer</li>
+		<li>q</li>
+		<li>table</li>
+	</ol>
+	4.
+	<ul>
+		<li>a lot of margin and padding work depending on the tag (tables and stuff especially too)</li>
+		<li>A lot of specific rounding and curve work for interactive pieces</li>
+		<li>CSS Styling for navigation menus (top bars, "hamburger menus", etc.)</li>
+		<li>Font work</li>
+	</ul>
+</body>
+</html>
