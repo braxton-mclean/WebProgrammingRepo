@@ -1,0 +1,152 @@
+@font-face {
+  font-family: hylianSerif;
+  src: url(Resources/HyliaSerifBeta-Regular.otf);
+}
+
+@font-face {
+  font-family: triforce;
+  src: url(Resources/Triforce.ttf);
+}
+
+@font-face {
+  font-family: charlemagne;
+  src: url(Resources/Charlemagne.ttf);
+}
+
+main {
+  min-width: 660px;
+}
+
+#highlightWord {
+  color: rgb(83, 111, 80);
+}
+
+.weblink:hover {
+  color: #bbf;
+}
+
+/* Background Styling */
+.bgimage {
+  background-image: url("Resources/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: blur(5px);
+}
+
+/* Navbar Styling */
+.topbar {
+	position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  z-index: 1;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab a {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tab a:hover {
+  background-color: #ddd;
+}
+
+#bannerimg {
+  font-size: 15px;
+}
+
+/* Title Bar Styling */
+#title {
+  text-align: center;
+  position: relative;
+  padding-left: auto;
+  padding-right: : auto;
+}
+
+.titlebar {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 75px;
+  font-family: hylianSerif;
+  font-size: 50px;
+}
+
+#naviQuote {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#navi {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  height: 70px;
+}
+
+#subtitle { 
+  font-size: 15px;
+  text-align: center;
+}
+
+/* Main Content Area Styling */
+div.mainContentArea {
+  position: relative;
+  margin: auto;
+  align-content: center;
+  display: flex;
+  width: 80%;
+  font-family: "Time New Roman";
+  font-size: 12px;
+}
+
+div.mainColumn {
+  background-color: rgba(253,255,224, .8);
+  margin-top: 2em;
+  padding: 2em;
+  margin-right: .5em;
+  margin-left: .5em; 
+}
+
+div.mainLeftColumn {
+  flex-basis: 60%;
+}
+
+div.mainRightColumn {
+  flex-basis: 40%;
+  text-align: center;
+  margin-bottom: auto;
+}
+
+#headshot {
+  width: 250px;
+  margin-bottom: 2em;
+}
+
+table.directory, th, td {
+  text-align: center;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table.directoryTable {
+  margin-left: auto;
+  margin-right: auto;
+}
