@@ -90,9 +90,7 @@
 	<input name="formColorPicker" type="color"/>
 	<br>
 
-	<textarea name="inputText">
-		Custom text here...
-	</textarea>
+	<textarea name="inputText">Custom text here...</textarea>
 	<br>
 	<input type="submit" name="submitButton"/>
 </form>
@@ -101,6 +99,33 @@
 	if (isset($message)) {
 		echo "<p class='".$classes."'>".$message."</p>";
 	}
+?>
+
+<br>
+<br>
+Part 2
+<br>
+<?php 
+$currentTimestamp = date("h:a");
+$hours_to_show = 12;
+
+function get_hour_string($givenTimestamp) {
+	return date("h:i a", $givenTimestamp) . "<br>";
+}
+
+echo "The date is: ".date("Y-m-d")." - ".date("h:i:s:a");
+echo "<table cellpadding='1px' cellspacing='1px' border: 1px solid black'>";
+for ($i = 0; $i < $hours_to_show; $i = $i+1) {
+    echo "<tr>";
+    for ($r = 0; $r < 4; $r = $r+1) {
+        echo "<th height='35px' width='35px' bgcolor='".(($i % 2 ==0) ? "#FAFAFA" : "#AA0000")."'>";
+        
+        echo "</th>";
+    }
+    echo "</tr>";
+}
+echo "</table>";
+
 ?>
 
 </body>
