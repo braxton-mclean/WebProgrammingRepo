@@ -8,23 +8,24 @@
 <body class="mainContent">
 	<div class="bgimage"></div>
 	<img src="GEMSTONES.png" class="centerImg">
-	<A HREF ="login_screen.html">
-		<img src="login.gif" alt="Alternative Text" class="centerImg smallerGif">
-	</A>
-	<br>
-	<A HREF ="startscreen.html">
-		<img src="startAnim.gif" alt="Alternative Text" class="centerImg smallerGif">
-	</A>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<A HREF ="end_screen.html">
-		<img src="EXIT.gif" alt="Alternative Text" class="centerImg smallerGif">
-	</A> 
+
+	<div id="enterUsername">
+		<input type="text" id="usernameInput">
+		<button onclick="setUsername()">Login</button>
+		<span id="changedUsernameMessage"></span>
+			
+		<script> 
+			function setUsername(){
+			    var usernameInput = document.getElementById("usernameInput");
+			    var changedUsernameMessage = document.getElementById("changedUsernameMessage");
+			    document.cookie = "userid=" + usernameInput.value;
+			    changedUsernameMessage.innerHTML = "Your Username is now set to: " + usernameInput.value;
+			}
+		</script>
+	</div>
+	<a href ="initial_screen.html">
+		<img src="HOME.png" alt="Alternative Text" class="centerImg smallerGif">
+	</a>
 	<br>
 	<img src="crystals.png" class="centerImg smallerGif footerImg">
 	

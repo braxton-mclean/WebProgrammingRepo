@@ -11,6 +11,11 @@
   z-index: -2;
 }
 
+#dateCalculator {
+  color: white;
+  font-size: 18px;
+}
+
 .mainContent {
   min-height: 600px;
 }
@@ -35,4 +40,10 @@
   left: 50%;
   bottom: 0;
   z-index: -1;
+}
+
+#loginSpace {
+  color: white;
+  text-align: center;
+  font-size: 25px;
 }

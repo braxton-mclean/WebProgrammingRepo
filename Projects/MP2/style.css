@@ -30,68 +30,27 @@ body {
 #pnts{
   padding-left: 2em;
 	float: left;
-  font-size: 30px;
+  font-size: 45px;
 }
 #tm{
   padding-right: 2em;
   float: right;
-  font-size: 30px;
+  font-size: 45px;
 }
 #jnk1{
   text-align: center;
 }
 
 .game-container {
-  margin-top: 100px auto;
+  margin-top: 50px;
   padding-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(4, auto);
   grid-gap: 30px;
   grid-column-gap: 75px;
   justify-content: center;
   perspective: 500px;
-  max-width: 750px;
 }
-
-
-
-.card.visible .card-back {
-  transform: rotateY(-180deg); 
-}
-
-.card.visible .card-front {
-  transform: rotateY(0); 
-}
-
-
-.card-back {
-  background-color: black;
-  border-color: #FF6D00;
-  transform: rotateY(0); 
-}
-
-
-.card-value {
-  position: relative;
-  transition: transform 100ms ease-in-out;
-  transform: scale(.9);
-}
-
-.card-front:hover .card-value {
-  transform: scale(1); 
-    
-}
-
-.card-front {
-  background-color: #FFBB89;
-  border-color: #333;
-  transform: rotateY(180deg);
-}
-
-
-
 
 @keyframes dance {
   0%, 100% {
@@ -124,7 +83,7 @@ body {
 }
 .flip-card {
   background-color: transparent;
- height: 250px;
+  height: 250px;
   width: 175px;
   perspective: 1000px;
 }
@@ -143,6 +102,10 @@ body {
   transform: rotateY(180deg);
 }
 
+.flipped {
+  transform: rotateY(180deg);
+}
+
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
@@ -152,14 +115,16 @@ body {
 }
 
 .flip-card-front {
-  background-image: url("BACKING.png");
-  background-size: 120px; 
+  background-image: url("CardsArt/BACKING.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: black;
 }
 
 .flip-card-back {
-  background-image: url("ver1pink.png");
-  background-size: 120px; 
+  background-image: url("CardsArt/ver1pink.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   transform: rotateY(180deg);
 }
