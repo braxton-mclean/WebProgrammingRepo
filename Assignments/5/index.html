@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="mainStyle.css">
+	<title>Assignment 5 Report</title>
+</head>
+<body>
+	<div class="topbar">
+		<img id="banner-img" alt="nike logo" src="Resources/banner-nike-image.png" height="45">
+		<div class="tab">
+			<a href="index.html" class="weblink">
+				Home - Main Report
+			</a>
+			<a href="display.php" class="weblink">
+				Data Display
+			</a>
+			<a href="newpurchase.html" class="weblink">
+				Enter Purchase
+			</a>
+			<a href="query.html" class="weblink">
+				Search
+			</a>
+		</div>
+	</div>
+
+<br>
+1.)<br>
+CREATE TABLE Purchases (PurchaseNo VARCHAR(10) NOT NULL,
+SupplierID VARCHAR(10) NOT NULL,
+Date VARCHAR(40) NOT NULL,
+Quantity INT(11) NOT NULL,
+Description VARCHAR(40) NOT NULL,
+Price DECIMAL(10,3) NOT NULL,
+PRIMARY KEY ( PurchaseNo )
+);
+<br>
+<img id="q1" src="1.png" alt="question screenshot">
+
+<br>
+2.)<br>
+INSERT INTO `Purchases` (`PurchaseNo`, `SupplierID`, `Date`,
+`Quantity`, `Description`, `Price`) VALUES
+('P100', 'S101', '2010-03-01', 100, 'T-Shirts Blue XL', '4.52'), 
+('P101', 'S102', '2010-03-01', 30, 'T-Shirts Red L', '3.44'), 
+('P102', 'S103', '2010-03-04', 45, ' Assorted Band Logos', '0.60'), 
+('P103', 'S101', '2010-03-06', 200, 'T-Shirts Black L', '4.70'), 
+('P104', 'S101', '2010-03-07', 150, 'T-Shirts Black XL', '4.60'), 
+('P105', 'S104', '2010-03-10', 190, 'T-Shirts Blue L Long-sleeved', '5.60'), 
+('P106', 'S101', '2010-03-15', 60, 'T-Shirts Blue XL', '4.52'), 
+('P107', 'S103', '2010-03-21', 15, 'Assorted Band Logos', '0.60'), 
+('P108', 'S101', '2010-03-22', 55, 'T-Shirts Red L', '3.70'), 
+('P109', 'S105', '2010-03-22', 50, 'Assorted Band Logos', '0.70'), 
+('P110', 'S102', '2010-03-22', 40, 'T-Shirts Blue L Longsleeved', '5.30'), 
+('P111', 'S101', '2010-03-25', 140, 'T-Shirts Blue S', '4.12'), 
+('P112', 'S102', '2010-03-27', 10, 'T-shirts Red XL Longsleeved', '5.10'), 
+('P113', 'S101', '2010-03-28', 15, 'Assorted Band Logos', '0.80'), 
+('P114', 'S102', '2010-03-30', 25, 'T-Shirts Blue XL', '4.60') ; 
+
+<img id="q2" src="2.png" alt="question screenshot">
+
+<br>
+3.)<br>
+<a href="http://codd.cs.gsu.edu/~bmclean3/Assignments/5/display.php" class="weblink">
+	http://codd.cs.gsu.edu/~bmclean3/Assignments/5/display.php
+</a>
+<br>
+
+<img id="q3" src="3.png" alt="question screenshot">
+
+<br>
+4.)<br>
+<a href="http://codd.cs.gsu.edu/~bmclean3/Assignments/5/newpurchase.html" class="weblink">
+	http://codd.cs.gsu.edu/~bmclean3/Assignments/5/newpurchase.html
+</a>
+<br>
+
+<img id="q4" src="4.png" alt="question screenshot">
+
+<br>
+5.)<br>
+<a href="http://codd.cs.gsu.edu/~bmclean3/Assignments/5/query.html" class="weblink">
+	http://codd.cs.gsu.edu/~bmclean3/Assignments/5/query.html
+</a>
+<br>
+
+<img id="q5" src="5.png" alt="question screenshot">
+
+<br>
+<br>
+<br>
+
+Final Weblink: <a href="http://codd.cs.gsu.edu/~bmclean3/Assignments/5/display.php" class="weblink">
+				http://codd.cs.gsu.edu/~bmclean3/Assignments/5/display.php
+			</a>
+</body>
+</html>

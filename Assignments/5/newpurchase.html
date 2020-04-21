@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="topbar">
+		<img id="banner-img" alt="nike logo" src="Resources/banner-nike-image.png" height="45">
+		<div class="tab">
+			<a href="index.html" class="weblink">
+				Home - Main Report
+			</a>
+			<a href="display.php" class="weblink">
+				Data Display
+			</a>
+			<a href="newpurchase.html" class="weblink">
+				Enter Purchase
+			</a>
+			<a href="query.html" class="weblink">
+				Search
+			</a>
+		</div>
+	</div>
+
+<form action="" method="post">
+	Purchase Number:
+	<input type="text" name="formPurchaseNo"><br>
+	Supplier ID:
+	<input type="text" name="formSupplierID"><br>
+	Date of Purchase:
+	<input type="date" name="formDate"
+       value="2020-01-01"
+       min="1990-01-01" max="2099-12-31"><br>
+	Quantity in Purchase Order:
+	<input type="number" name="formQuantity" ste="1"><br>
+	Product Description:
+	<input type="text" name="formDescription"><br>
+	Product Price:
+	<input type="number" name="formPrice" step=".01"><br>
+
+	<input type="submit" name="submitButton"/>
+</form>
+
+</body>
+</html>
