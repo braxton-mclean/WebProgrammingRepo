@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="partb.js"></script>
+	<title></title>
+</head>
+<body>
+	<span id="tm">Time | <label id = "total-time"><label id="mins">00</label>:<label id="secs">00</label></label></span><br>
+
+	Guess a number between 1 and 100 (inclusive)<br>
+
+	<input type="text" id="userGuess">
+	<button type="button" onclick="checkGuess();">Guess</button>
+	<br>
+	<div id="gameReporting"></div>
+
+	<br>
+	<br>
+	If the audio doesn't start for you, go ahead and play it :)
+	<br>
+	<audio controls autoplay>
+	  	<source src="music.mp3" type="audio/mp3">
+	  	Your browser does not support the audio element.
+	</audio>
+</body>
+</html>
