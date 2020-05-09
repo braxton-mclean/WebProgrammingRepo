@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script type="text/javascript" src="partc.js"></script>
-	<title></title>
+  <title></title>
 </head>
 <body>
-	
+  	<script type="text/javascript" src="partc.js"></script>
+  	<link rel="stylesheet" type="text/css" href="style.css">
 </body>
+
+<div id="GameArea">
+    <table id="GameGrid">
+
+    </table>
+    <br>
+    <div id="Controls">
+    	<p style="color: black;">
+	    	Memorize the locations of the generated pictures and match them before time is up!<br>
+	    	You will be given a number of seconds of your choosing below to memorize the picture locations, but after that they will be hidden!<br>
+	    	The more pictures you need to match, the longer you will have to match them. Good luck~<br>
+	    	<br>
+	    	Select your settings below
+	    </p>
+	    <p style="font-weight: bold;" id="Timer"></p>
+	    <br>
+	    <p style="color: black; font-weight: bold;">Choose Your Puzzle Size</p>
+	    <select id="sizes" name="sizes" title="sizes" onchange="selectSize(this)">
+	        <option selected value="8" id= "8p">8 Pictures</option>
+	        <option value="10" id="10p">10 pictures</option>
+	        <option value="12" id="12p">12 pictures</option>
+	    </select>
+
+	    <br>
+
+	    <p style="color: black; font-weight: bold;">Choose Your Difficulty</p>
+
+	    <select id="Difficulty" name="Difficulty" title="Difficulty" onchange="selectDifficulty(this)">
+	        <option selected value="3" id= "3">3 Seconds</option>
+	        <option value="5" id="5">5 Seconds</option>
+	        <option value="8" id="8">8 Seconds</option>
+	    </select>
+	    <br>
+	    <button id="BeginButton" onclick="loadSettings()">Load Puzzle</button><br>
+	    <button id="ResetButton">Solve Board</button><br>
+    </div>
 </html>
